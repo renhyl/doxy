@@ -1,0 +1,68 @@
+:root {
+  color-scheme: dark;
+
+  --incall-controlbar-base-border: rgba(255, 255, 255, 0.12);
+  --incall-controlbar-base-background: rgba(0, 0, 0, 0.70);
+  --incall-controlbar-cells-default: rgba(255, 255, 255, 0.00);
+  --incall-controlbar-cells-hover: rgba(255, 255, 255, 0.08);
+  --incall-controlbar-cells-active: rgba(255, 255, 255, 0.12);
+  --incall-controlbar-cells-negative: #D12525;
+  --incall-controlbar-cells-negative-hover: #e02d2d;
+  --incall-controlbar-cells-off: rgba(255, 255, 255, 0.12);
+  --incall-controlbar-icon-default: rgba(255, 255, 255, 0.90);
+  --incall-controlbar-icon-off: rgba(255, 255, 255, 0.50);
+  --incall-controlbar-icon-negative: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url(/woman-fullsize.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  margin-bottom: 24px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

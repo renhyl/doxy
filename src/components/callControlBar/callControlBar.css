@@ -1,0 +1,36 @@
+.control-bar {
+  display: inline-flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: var(--Radius-Radius-16, 16px);
+  border: 1px solid var(--incall-controlbar-base-border);
+  background: var(--incall-controlbar-base-background);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  position: relative;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.control-bar:hover {
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.control-bar__separator {
+  width: 1px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.10);
+  margin: 0 2px;
+  flex-shrink: 0;
+}
+
+.control-bar__menu-wrapper {
+  position: relative;
+}

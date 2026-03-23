@@ -1,0 +1,29 @@
+.hangup-button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  background: var(--incall-controlbar-cells-negative);
+  border: none;
+  color: var(--incall-controlbar-icon-negative);
+  cursor: pointer;
+  outline: none;
+  transition:
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.hangup-button:hover {
+  background: var(--incall-controlbar-cells-negative-hover);
+  box-shadow: 0 0 16px rgba(209, 37, 37, 0.4);
+}
+
+.hangup-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}

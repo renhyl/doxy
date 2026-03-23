@@ -1,0 +1,97 @@
+.control-button-group {
+  position: relative;
+}
+
+.control-button__bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.control-button {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  color: var(--incall-controlbar-icon-default);
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s ease;
+  overflow: hidden;
+}
+
+.control-button--has-chevron {
+  width: auto;
+  padding: 12px 4px 12px 12px;
+}
+
+.control-button:not(.control-button--off):hover {
+  background: var(--incall-controlbar-cells-hover);
+}
+
+.control-button:not(.control-button--off):active {
+  background: var(--incall-controlbar-cells-active);
+}
+
+.control-button--off {
+  color: var(--incall-controlbar-icon-off);
+}
+
+.control-button--off:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.control-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}
+
+.control-button__icon-wrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.control-button__icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-button__chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--incall-controlbar-icon-default);
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.control-button:hover .control-button__chevron {
+  opacity: 1;
+}
+
+.control-button__ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
