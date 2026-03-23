@@ -1,3 +1,8 @@
+# Doxy Screen
+
+<img width="796" height="907" alt="image" src="https://github.com/user-attachments/assets/cd4fe03c-2949-4b82-b204-08082f5dd237" />
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
